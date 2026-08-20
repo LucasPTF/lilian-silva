@@ -616,7 +616,10 @@ h3 {
 .book-stage img {
   position: relative;
   z-index: 2;
-  width: min(82%, 470px);
+  width: min(72%, 410px);
+  height: auto;
+  aspect-ratio: 625 / 1000;
+  object-fit: contain;
   filter: drop-shadow(0 25px 34px rgba(6, 37, 31, 0.22));
   transform: rotate(-2deg);
 }

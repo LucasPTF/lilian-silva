@@ -155,7 +155,7 @@ function salesPage(angle, path) {
         <div class="container discover-grid">
           <div class="book-stage">
             <div class="book-halo" aria-hidden="true"></div>
-            <img src="/assets/capa-guia.png" alt="Capa do guia Ansiedade e Ataques de Pânico, de Lilian Silva" width="1024" height="1024">
+            <img src="/assets/capa-guia.png" alt="Capa do guia Ansiedade e Ataques de Pânico, de Lilian Silva" width="625" height="1000">
             <span class="book-badge">Acesso em PDF</span>
           </div>
           <div class="discover-copy">
