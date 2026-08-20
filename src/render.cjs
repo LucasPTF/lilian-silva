@@ -12,8 +12,10 @@ function icon(name) {
   return icons[name] || "•";
 }
 
-function head({ title, description, path, image = "/assets/og.png" }) {
-  const url = `https://lilian-silva.vercel.app${path}`;
+function head({ title, description, path }) {
+  const siteUrl = "https://lilian-silva-olive.vercel.app";
+  const url = `${siteUrl}${path}`;
+  const image = `${siteUrl}/assets/og.png`;
   return `
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
