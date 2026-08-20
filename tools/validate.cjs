@@ -20,10 +20,10 @@ for (const [index, html] of sales.entries()) {
   if (!html.includes(checkoutUrl)) fail(`Checkout ausente em a${index + 1}`);
   if (!html.includes("R$ 29,90")) fail(`Preço ausente em a${index + 1}`);
   if (!html.includes("Garantia de 7 dias")) fail(`Garantia ausente em a${index + 1}`);
+  if (/Ângulo A[123]/i.test(html)) fail(`Identificação de ângulo ainda presente em a${index + 1}`);
 }
 
 const normalized = sales.map((html) => html
-  .replaceAll(angles.a1.label, "ANGLE_LABEL").replaceAll(angles.a2.label, "ANGLE_LABEL").replaceAll(angles.a3.label, "ANGLE_LABEL")
   .replaceAll(angles.a1.title, "ANGLE_TITLE").replaceAll(angles.a2.title, "ANGLE_TITLE").replaceAll(angles.a3.title, "ANGLE_TITLE")
   .replaceAll(angles.a1.support, "ANGLE_SUPPORT").replaceAll(angles.a2.support, "ANGLE_SUPPORT").replaceAll(angles.a3.support, "ANGLE_SUPPORT")
   .replaceAll(angles.a1.cta, "ANGLE_CTA").replaceAll(angles.a2.cta, "ANGLE_CTA").replaceAll(angles.a3.cta, "ANGLE_CTA")

@@ -84,7 +84,6 @@ function salesPage(angle, path) {
         <div class="hero-glow hero-glow-two" aria-hidden="true"></div>
         <div class="container hero-grid">
           <div class="hero-copy">
-            <p class="eyebrow">${angle.label}</p>
             <h1>${angle.title}</h1>
             <p class="hero-support">${angle.support}</p>
             <div class="hero-actions">
