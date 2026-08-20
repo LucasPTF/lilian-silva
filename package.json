@@ -1,0 +1,11 @@
+{
+  "name": "lilian-silva",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Página de vendas do guia Ansiedade e Ataque de Pânico, de Lilian Silva.",
+  "scripts": {
+    "build": "node tools/build.cjs",
+    "validate": "node tools/validate.cjs",
+    "start": "npx --yes serve dist -l 4173"
+  }
+}
